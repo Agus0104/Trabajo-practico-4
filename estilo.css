@@ -9,10 +9,16 @@
     box-sizing: border-box;
     background-repeat: no-repeat;
 }
+header .bi{
+    display: none;
+}
+.cel{
+    display: none;
+}
 body{
     background-image: url(michael-fousert-0962p7mcux4-unsplash.jpg);
-    background-size: cover;
-    z-index: -100;
+    background-size:contain;
+    z-index: -10;
 }
 header{
     display: flex;
@@ -43,6 +49,13 @@ nav a{
     padding: 5px 13px;
     font-weight: 500;
 }
+.nave a:hover{
+    padding: 5px 10px;
+    background-color: #191a26;
+    color: #FFFFFF;
+    border-radius: 15px;
+    transition: 0.8s;
+}
 .hero img{
     width: 50vh;
 }
@@ -60,12 +73,13 @@ nav a{
     color: rgb(255, 217, 0);
     font-size: 120px;
     margin-top: -30px;
-    z-index: 2;
+    z-index: 4;
 }
 .hero h1{
     color: white;
     font-size: 120px;
     margin-top: -30px;
+    z-index: 3;
 }
 .hero p{
     color: rgba(255, 255, 255, 0.833);
@@ -110,4 +124,777 @@ nav a{
     position: relative;
     top: -28vh;
     word-spacing: 6px;
+}
+/* empieza tour */
+.tour{
+    background-color: #191a26;
+    height: 800px;
+    align-items: center;
+}
+.equipo h1{
+    padding-top: 60px;
+    color: #FFFFFF;
+    font-weight: 530;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+}
+.equipo h3{
+    color: #FFFFFF;
+    font-size: 23px;
+    font-weight: 500;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.fotos{
+    display: flex;
+    justify-content: space-around;
+    color: #FFFFFF;
+}
+.imagenes{
+    margin-top: 60px;
+}
+.fotos img{
+    height: 350px;
+}
+.nombres{
+    margin-top: 20px
+}
+.nombres h1{
+    font-size: 30px;
+}
+.fotos p{
+    font-size: 20px;
+}
+
+.p1{
+    margin-left: 22px;
+}
+.p2{
+    margin-right: 10px;
+}
+.p3{
+    margin-right: 20px;
+} */
+.p4{
+    margin-right: 70px;
+}
+.p5{
+    margin-right: 50px;
+}
+.p6{
+    margin-right: 23px;
+}
+.jeremy:hover{
+    transform: translateY(-3%);
+    transition: all 400ms ease;
+}
+.jamie:hover{
+    transform: translateY(-3%);
+    transition: all 400ms ease;
+}
+.meysam:hover{
+    transform: translateY(-3%);
+    transition: all 400ms ease;
+}
+/* comienza el about */
+.about1{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 100px 0;
+    width: 100%;
+    padding-left: 180px;
+    padding-right: 160px;
+}
+.about1 .acerca{
+    width: 50%;
+}
+
+.about1{
+    background-image: url(michael-fousert-lE5-z4nTCTQ-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.acerca h2{
+    color: rgb(255, 255, 255);
+    flex-basis: 50%;
+    margin-left: 60px;
+    font-weight: 550;
+    font-size: 40px;
+}
+
+.about1 div p{
+    font-size: 20px;
+    margin-left: 180px;
+    color: #FFFFFF;
+}
+/* termina el about */
+/* comienza contacto */
+.contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contacto h1{ 
+    color: #FFFFFF;
+    font-size: 55px;
+    font-weight: 600;
+    padding-top: 35vh;
+    padding-left: 14vw;
+}
+.contacto{
+    background-image: url(valdemaras-d-khbjgGAerPU-unsplash.jpg);
+    height: 600px;
+    width: 50%;
+    display: flex;
+    justify-content: baseline;
+}
+.contact .formulario form{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 180px;
+}
+.formulario{
+    width: 50%;
+    height: 600px;
+    background-color: rgb(15, 34, 16);
+    padding-top: 100px;
+    padding-left: 55px;
+}
+
+.formulario form input{
+    margin-top: 20px;
+    height: 30px;
+    width: 360px;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 5px;
+}
+.escribe form input{
+    height: 150px;
+}
+
+.enviar{
+    margin-top: 10px;
+    height: 40px;
+    width: 360px;
+    border-radius: 10px;
+    padding: 5px;
+    border-style: solid;
+    background-color:black;
+    color:white;
+    font-size: 15px;
+    cursor: pointer;
+}
+/* termina contacto */
+
+@media(max-width:768px){
+    /* comienza el header */
+    .nave{
+        display: none;
+    }
+    header .bi{
+        display: block;
+        color: #FFFFFF;
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 0;
+        position: fixed;
+        width: 100vw;
+        top: 0px;
+        background-color: rgb(42, 42, 70, 0);
+        z-index: 1;
+        height: 12vh;
+    }
+    .logo img{
+        width: 12vh;
+    }
+    /* termina el header */
+
+    /* comienza el hero */
+    .hero{
+        display: none;
+    }
+    .herocel{
+        display: block;
+    }
+    .herocel{
+        width: 100%;
+        padding-top: 50px;
+        height: 100vh;
+    }
+    .herocel h2{
+        color: white;
+        font-size: 40px;
+        padding-top: 40px;
+    }
+    .herocel h1 span{
+        color: rgb(255, 217, 0);
+        font-size: 120px;
+        margin-top: -30px;
+        z-index: 4;
+    }
+    .herocel h1{
+        color: white;
+        font-size: 120px;
+        margin-top: -30px;
+        z-index: 3;
+    }
+    .herocel p{
+        color: rgba(255, 255, 255, 0.833);
+        padding-left: 4px;
+    }
+    .herocel .p2 p{
+        color: rgba(255, 255, 255, 0.833);
+        padding-left: 4px;
+        padding-top: 20px;
+    }
+    .texto{
+        margin-left: 10vw;
+        width: 100%;
+    }
+    /* termina el hero */
+
+    /* comienza la sección visióncel */
+    .about1{
+        display: none;
+    }
+    .visioncel1{
+        display: block;
+    }
+    .pcel1{
+        display: block;
+    }
+    .visioncel1{
+        display: flex;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        padding: 100px 0;
+        width: 100%;
+        padding-left: 180px;
+        padding-right: 160px;
+    }
+    .pcel1{
+        background-color: #191a26;
+        display: flex;
+        justify-content: center;
+        height: 20vh;
+        padding-top: 3vh;
+    }
+    
+    .visioncel1{
+        background-image: url(michael-fousert-lE5-z4nTCTQ-unsplash.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .visioncel1 h2{
+        color: rgb(255, 255, 255);
+        margin-left: 20px;
+        font-weight: 550;
+        font-size: 40px;
+    }
+    
+    .pcel1 p{
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    /* termina vicioncel */
+    /* comienza tour */
+    .tour{
+        display: none;
+    }
+    .tourcel{
+        display: block;
+    }
+    .cel1{
+        display: block;
+    }
+    .tourcel{
+        background-color: #191a26;
+        height: 20vh;
+        align-items: center;
+        width: 100%;
+        margin-top: -50vh;
+    }
+    .tourcel h1{
+        padding-top: 2vh;
+        color: #FFFFFF;
+        font-weight: 530;
+        font-size: 45px;
+        display: flex;
+        justify-content: center;
+    }
+    .tourcel h3{
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 1vh;
+        display: flex;
+        justify-content: center;
+    }
+    .cel1{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20vh;
+        background-color: #191a26;
+        margin-top: -0.1vh;
+    }
+    .cel1 h1{
+        padding-left: 8vh;
+        padding-top: 2vh;
+        color: #FFFFFF;
+    }
+    .cel1 .p1{
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    
+    .cel1 a img{
+        width: 48vh;
+        justify-content: center;
+    }
+
+    .cel2{
+        display: block;
+    }
+
+    .cel2{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20vh;
+        background-color: #191a26;
+        margin-top: -0.1vh;
+    }
+    .cel2 h1{
+        padding-left: 10vh;
+        padding-top: 2vh;
+        color: #FFFFFF;
+    }
+    .cel2 .p2{
+        padding-left: 6vh;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    .cel2 a img{
+        width: 48vh;
+        padding-top: 4vh;
+    }
+
+    .cel3{
+        display: block;
+    }
+
+    .cel3{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20vh;
+        background-color: #191a26;
+        margin-top: -1px;
+    }
+    .cel3 h1{
+        padding-left: 2vh;
+        padding-top: 2vh;
+        color: #FFFFFF;
+    }
+    .cel3 .p3{
+        padding-left: 1vh;
+        font-size: 20px;
+        color: #FFFFFF;
+        padding-bottom: 5vh;
+    }
+    .cel3 a img{
+        width: 48vh;
+        padding-top: 40px;
+        
+    }
+    /* termina tour */
+    /* empieza contact */
+    .contact{
+        display: none;
+    }
+    .cont{
+        display: block;
+    }
+    .cont{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 160px;
+    }
+    .cont h1{ 
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        font-size: 45px;
+        font-weight: 500;
+        padding-top: 55px;
+    }
+    .cont p{
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 500;
+        padding-top: 10px;
+    }
+    .cont{
+        background-image: url(valdemaras-d-khbjgGAerPU-unsplash.jpg);
+        background-size: cover;
+        height: 70vh;
+    }
+
+    .formu{
+        display: block;
+    }
+    .formu form{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        margin-left: 26vw;
+    }
+    .formu{
+        height: 55vh;
+        background-color: rgb(42, 42, 70);
+        padding-top: 7vh;
+        padding-left: 5.4vh;
+    }
+    
+    .formu form input{
+        margin-top: 20px;
+        height: 3vh;
+        width: 40vw;
+        border-radius: 10px;
+        border-style: solid;
+        padding: 5px;
+    }
+    .escribe form input{
+        height: 150px;
+    }
+    
+    .enviar{
+        margin-top: 10px;
+        height: 40px;
+        width: 40vw;
+        border-radius: 10px;
+        padding: 5px;
+        border-style: solid;
+        background-color:black;
+        color:white;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    /* termina contact */
+}
+/* Termina responsive tablet */
+/* empieza el responsive smartphone */
+@media(min-width:768px) and (max-width:1023px){
+    /* comienza el header */
+    .nave{
+        display: none;
+    }
+    header .bi{
+        display: block;
+        color: #FFFFFF;
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 0;
+        position: fixed;
+        width: 100vw;
+        top: 0px;
+        background-color: rgb(42, 42, 70, 0);
+        z-index: 1;
+        height: 12vh;
+    }
+    .logo img{
+        width: 20vh;
+    }
+    /* termina el header */
+
+    /* comienza el hero */
+    .hero{
+        display: none;
+    }
+    .herocel{
+        display: block;
+    }
+    .herocel{
+        width: 100%;
+        padding-top: 150px;
+        height: 100vh;
+    }
+    .herocel h2{
+        color: white;
+        font-size: 40px;
+        padding-top: 40px;
+    }
+    .herocel h1 span{
+        color: rgb(255, 217, 0);
+        font-size: 120px;
+        margin-top: -30px;
+        z-index: 4;
+    }
+    .herocel h1{
+        color: white;
+        font-size: 120px;
+        margin-top: -30px;
+        z-index: 3;
+    }
+    .herocel p{
+        color: rgba(255, 255, 255, 0.833);
+        padding-left: 4px;
+    }
+    .herocel .p2 p{
+        color: rgba(255, 255, 255, 0.833);
+        padding-left: 4px;
+        padding-top: 20px;
+    }
+    .texto{
+        margin-left: 10vw;
+        width: 100%;
+    }
+    /* termina el hero */
+
+    /* comienza la sección visióncel */
+    .about1{
+        display: none;
+    }
+    .visioncel{
+        display: block;
+    }
+    .pcel{
+        display: block;
+    }
+    .visioncel{
+        display: flex;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        padding: 100px 0;
+        width: 100%;
+        padding-left: 180px;
+        padding-right: 160px;
+    }
+    .visioncel .acerca{
+        width: 50%;
+    }
+    
+    .visioncel{
+        background-image: url(michael-fousert-lE5-z4nTCTQ-unsplash.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .pcel h2{
+        color: rgb(255, 255, 255);
+        margin-left: 20px;
+        font-weight: 550;
+        font-size: 40px;
+    }
+    
+    .visioncel div p{
+        font-size: 20px;
+        margin-left: 180px;
+        color: #FFFFFF;
+    }
+    /* termina vicioncel */
+    /* comienza tour */
+    .tour{
+        display: none;
+    }
+    .tourcel{
+        display: block;
+    }
+    .cel1{
+        display: block;
+    }
+    .tourcel{
+        background-color: #191a26;
+        height: 20vh;
+        align-items: center;
+        width: 100%;
+        margin-top: -190px;
+    }
+    .tourcel h1{
+        padding-top: 2vh;
+        color: #FFFFFF;
+        font-weight: 530;
+        font-size: 45px;
+        display: flex;
+        justify-content: center;
+    }
+    .tourcel h3{
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 1vh;
+        display: flex;
+        justify-content: center;
+    }
+    .cel1{
+        display: flex;
+        flex-direction: column;
+        padding-left: 35vh;
+        background-color: #191a26;
+        margin-top: -0.1vh;
+    }
+    .cel1 h1{
+        padding-left: 8vh;
+        padding-top: 2vh;
+        color: #FFFFFF;
+    }
+    .cel1 .p1{
+        padding-left: 10vh;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    
+    .cel1 a img{
+        width: 48vh;
+        justify-content: center;
+    }
+
+    .cel2{
+        display: block;
+    }
+
+    .cel2{
+        display: flex;
+        flex-direction: column;
+        padding-left: 35vh;
+        background-color: #191a26;
+        margin-top: -0.1vh;
+    }
+    .cel2 h1{
+        padding-left: 10vh;
+        padding-top: 2vh;
+        color: #FFFFFF;
+    }
+    .cel2 .p2{
+        padding-left: 8vh;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    .cel2 a img{
+        width: 48vh;
+        padding-top: 4vh;
+    }
+
+    .cel3{
+        display: block;
+    }
+
+    .cel3{
+        display: flex;
+        flex-direction: column;
+        padding-left: 35vh;
+        background-color: #191a26;
+        margin-top: -1px;
+    }
+    .cel3 h1{
+        padding-left: 6vh;
+        padding-top: 2vh;
+        color: #FFFFFF;
+    }
+    .cel3 .p3{
+        padding-left: 12vh;
+        font-size: 20px;
+        color: #FFFFFF;
+        padding-bottom: 5vh;
+    }
+    .cel3 a img{
+        width: 48vh;
+        padding-top: 40px;
+        
+    }
+    /* termina tour */
+    /* empieza contact */
+    .contact{
+        display: none;
+    }
+    .cont{
+        display: block;
+    }
+    .cont{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 160px;
+    }
+    .cont h1{ 
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        font-size: 45px;
+        font-weight: 500;
+        padding-top: 55px;
+    }
+    .cont p{
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 500;
+        padding-top: 10px;
+    }
+    .cont{
+        background-image: url(valdemaras-d-khbjgGAerPU-unsplash.jpg);
+        background-size: cover;
+        height: 70vh;
+    }
+
+    .formu{
+        display: block;
+    }
+    .formu form{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        margin-left: 26vw;
+    }
+    .formu{
+        height: 55vh;
+        background-color: rgb(42, 42, 70);
+        padding-top: 7vh;
+        padding-left: 5.4vh;
+    }
+    
+    .formu form input{
+        margin-top: 20px;
+        height: 3vh;
+        width: 40vw;
+        border-radius: 10px;
+        border-style: solid;
+        padding: 5px;
+    }
+    .escribe form input{
+        height: 150px;
+    }
+    
+    .enviar{
+        margin-top: 10px;
+        height: 40px;
+        width: 40vw;
+        border-radius: 10px;
+        padding: 5px;
+        border-style: solid;
+        background-color:black;
+        color:white;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    /* termina contact */
 }

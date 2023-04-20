@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
 <body>
     <header>
@@ -18,16 +19,17 @@
             <p><i>Travelers</i></p>
         </div>
 
-        <nav>
+        <nav class="nave">
             <a href="#">Home</a>
             <a href="#">Tours</a>
             <a href="#">About us</a>
             <a href="#">Contact us</a>
         </nav>
+        <i class="bi bi-list miclase"></i>
     </header>
     <main>
+        <!-- empieza el hero -->
         <section class="hero">
-            
             <div class="texto">
                 <h2>Amazing</h2>
                 <h1><span class="color_span">NORWA</span>Y</h1>
@@ -39,9 +41,122 @@
             <div class="p2">
                 <p>> Facebook  Twitter   Instagram   Pinterest</p>
             </div>
-            
-        
         </section>
+        <section class="cel herocel">
+            <div class="texto">
+                <h2>Amazing</h2>
+                <h1><span class="color_span">NORWA</span>Y</h1>
+                <p>Visit Norway, you will never regret it. This is something <br> incredible fantastic nature, fjords, fancy <br> outlines of the coast...</p>
+            <div>
+            <div class="p2">
+                <p>> Facebook  Twitter   Instagram   Pinterest</p>
+            </div>
+
+        </section>
+        <!-- termina el hero -->
+        <!-- empieza tours -->
+        <section class="tour">
+            <div class="equipo">
+                <h1>Tours</h1>
+                <h3>We will surprise you with the best available tours in Norway</h3>
+            </div>
+            <div class="fotos imagenes">
+               <a href="#"><img src="Geirangerfjord_(6-2007).jpg" class="jeremy"></a>
+               <a href="#"><img src="crusing-along-the-atlantic-road-norway.jpg" class="jamie"></a>
+               <a href="#"><img src="aurora.jpg" class="meysam"></a>
+            </div>
+            <div class="fotos nombres">
+                <h1>FJORD CRUISE & TRAIN</h1>
+                <h1>NORWAY ROAD TRIP</h1>
+                <h1>CHASE THE NORTHERN LIGHTS</h1>
+            </div>
+            <div class="fotos titulos">
+                 <p class="p1">Explore Norway´s star attractions by <br> rail, ferry and Hurtigruten cruise<br>
+                    </p>
+                 <p class="p2">See Norway´s stunning scenery <br> at your own pace<br>
+                    </p>
+                 <p class="p3">Go in search of the enchanting natural <br> light show of the aurora borealis<br>
+                    </p>
+             </div>
+    </section>
+    <section class="cel tourcel">
+            <h1>Tours</h1>
+            <h3>We will surprise you with the best available tours in Norway</h3>
+        </section>
+        <section class="cel cel1">
+            <a href="#"><img src="Geirangerfjord_(6-2007).jpg" class="jeremy"></a>
+            <h1>FJORD CRUISE & TRAIN</h1>
+            <p class="p1">Explore Norway´s star attractions by <br> rail, ferry and Hurtigruten cruise<br>
+            </p>
+        </section>
+        <section class="cel cel2">
+            <a href="#"><img src="crusing-along-the-atlantic-road-norway.jpg" class="jamie"></a>
+            <h1>NORWAY ROAD TRIP</h1>
+            <p class="p2">See Norway´s stunning scenery <br> at your own pace<br>
+            </p>
+        </section>
+        <section class="cel cel3">
+            <a href="#"><img src="aurora.jpg" class="meysam"></a>
+            <h1>CHASE THE NORTHERN LIGHTS</h1>
+            <p class="p3">Go in search of the enchanting natural <br> light show of the aurora borealis<br></p>
+        </section>
+    
+        <!-- termina tours -->
+        <!-- empieza el about -->
+        <section class="about1">
+            <div class="acerca">
+                <h2>About us</h2>
+            </div>
+            <div>
+                <p>Established in Iceland back in 2002, Travelers has<br> been creating great experiences for travellers <br> in Norway since 2005. We’re passionate in our <br> belief that your trip should be memorable for all the right reasons.</p>
+            </div>
+        </section>
+        <section class="cel visioncel">
+            <div class="cel pcel">
+                <h2>About us</h2>
+            </div>
+            <div>
+                <p>Established in Iceland back in 2002, Travelers has been creating great experiences for travellers <br> in Norway since 2005. We’re passionate in our <br> belief that your trip should be memorable for all the right reasons.</p>
+            </div>
+        </section>
+        <section class="cel visioncel1"><h2>About us</h2></section>
+        <section class="cel pcel1"><p>Established in Iceland back in 2002, Travelers has been creating great <br> experiences for travellers in Norway since 2005. We’re passionate in <br> our belief that your trip should be memorable for all the right reasons.</p></section>
+        <!--Empieza contact-->
+        <section class="contact">
+            <div class="contacto">
+             <h1>CONTACT US</h1>
+            </div>
+            <div class="formulario">
+                <form action="">
+                        <input type="text" required placeholder="Name" maxlength="50" >
+                        <input type="email" required placeholder="Email" maxlength="100" >
+                        <input type="text" required placeholder="Subject">
+                    </form>
+                <div class="escribe">
+                    <form action="">
+                        <input type="text" required placeholder="Leave your message here...">
+                        <button class="enviar">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="cel cont">
+            <h1>CONTACT US</h1>
+        </section>
+        <section class="cel formu">
+            <form action="">
+                        <input type="text" required placeholder="Nombre" maxlength="50" >
+                        <input type="email" required placeholder="Email" maxlength="100" >
+                        <input type="text" required placeholder="Asunto">
+                    </form>
+                <div class="escribe">
+                    <form action="">
+                        <input type="text" required placeholder="Escribe tu mensaje aquí...">
+                        <button class="enviar">Enviar</button>
+                    </form>
+                </div>
+        </section>
+        <!--Termina contact-->
     </main>
 
 
